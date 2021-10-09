@@ -1,20 +1,20 @@
 package com.learnersacademy.reportgenerator.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
-@Entity
-@Table(name = "classes")
 public class Classes {
-	@Id
-	@Column(name = "ClassID")
+
 	private String classID;
-	@Column(name = "ClassName")
 	private String className;
+	
+	public Classes() {
+		
+	}
+	
+	public Classes(String classID, String className) {
+		super();
+		this.classID = classID;
+		this.className = className;
+	}
 	public String getClassID() {
 		return classID;
 	}
